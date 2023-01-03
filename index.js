@@ -18,6 +18,9 @@ const getCatHTML = (cat) => `
 fetch('https://cats.petiteweb.dev/api/single/bronza2022/show/')
   .then((res) => res.json())
   .then((data) => {
-    $wr.insertAdjacentHTML('afterbegin', data.map((cat) => getCatHTML(cat)).join(''))
-		/ console.log({ data });
+    $wr.insertAdjacentHTML(
+      'afterbegin',
+      data.map((cat) => getCatHTML(cat)).join(''),
+    );
+    console.log({ data });
   });
