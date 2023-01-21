@@ -13,5 +13,9 @@ module.exports = {
   rules: {
     'no-tabs': 0,
     'no-console': 0,
+    'no-alert': 0,
+    'consistent-return': 0,
+    'prefer-destructuring': 0,
+    'slintarrow-body-style': 0,
   },
 };
